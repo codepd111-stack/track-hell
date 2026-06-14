@@ -9,7 +9,7 @@ import os
 from datetime import date, timedelta
 
 sys.path.insert(0, os.path.dirname(__file__))
-from _shared import (
+from lib.shared import (
     get_db, init_db, call_llm, parse_json_response,
     cors_response, PARSE_SYSTEM, INSIGHT_SYSTEM, GOAL_DETECT_SYSTEM
 )

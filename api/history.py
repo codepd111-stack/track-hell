@@ -9,7 +9,7 @@ import json
 from datetime import date, timedelta
 
 sys.path.insert(0, os.path.dirname(__file__))
-from _shared import get_db, init_db, cors_response
+from lib.shared import get_db, init_db, cors_response
 
 
 def handler(request):

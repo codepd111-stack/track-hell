@@ -10,7 +10,7 @@ import os
 from datetime import date
 
 sys.path.insert(0, os.path.dirname(__file__))
-from _shared import get_db, init_db, cors_response
+from lib.shared import get_db, init_db, cors_response
 
 
 def compute_goal_stats(goal):
