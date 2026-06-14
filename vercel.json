@@ -1,10 +1,14 @@
 {
   "version": 2,
   "builds": [
-    { "src": "api/*.py", "use": "@vercel/python" }
+    { "src": "api/submit_log.py", "use": "@vercel/python" },
+    { "src": "api/goals.py", "use": "@vercel/python" },
+    { "src": "api/history.py", "use": "@vercel/python" }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1.py" },
+    { "src": "/api/submit_log", "dest": "/api/submit_log.py" },
+    { "src": "/api/goals", "dest": "/api/goals.py" },
+    { "src": "/api/history", "dest": "/api/history.py" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
